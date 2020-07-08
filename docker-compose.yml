@@ -49,6 +49,7 @@ services:
       - 5001:5001
 
   frontend:
+    stdin_open: true
     build:
       context: .
       dockerfile: ./docker/frontend/Dockerfile
